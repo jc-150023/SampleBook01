@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleBook01.BookPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- <TableView Intent="Data">
+                <TableView.Root>
+                    <TableRoot>
+                        <TableSection Title="TableViewについて Intent=Data">
+                            <TextCell Text="テキストセル" Detail="詳細"/>
+                            <EntryCell Placeholder="ここに入力してください"/>
+                            <ViewCell ImageSource = "https://i2.wp.com/oxamarin.com/wp-content/uploads/2016/12/りんちゃん.jpg"
+                                      Text="aaa"/>
+                            <SwitchCell Text="スイッチ"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView.Root>
+            </TableView> -->
+
+            <ListView x:Name="listView"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,11 +9,22 @@ namespace SampleBook01
 {
     public partial class App : Application
     {
+        public static string dbPath;
+
+        public App(string dbPath)
+        {
+
+            //AppのdbPathに引数のパスを設定します
+            App.dbPath = dbPath;
+            InitializeComponent();
+            MainPage = new SampleBook01.MainPage();
+
+        }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new SampleBook01.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
